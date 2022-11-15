@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.header-container {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
+
+.mg-t {
+    margin-top: 25px;
+}
+
+.text-logo {
+
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 34px;
+    color: #555555;
+}
+
+.button-header>.button {
+    list-style: none;
+    text-transform: capitalize;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    min-height: 100%;
+}
+
+.button>li>a {
+    text-decoration: none;
+    color: #555555;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-main {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.button-header-1 {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(70, 179, 178, 0.15);
+    border-radius: 58px;
+    padding: 15px 24px;
+}
+
+.button-header-1>a {
+    color: #46B3B2;
+}
+
+.map {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.border-search {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin-top: 30px;
+    min-height: 60px;
+}
+
+.search-selector {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.txt-search-gren {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #46B3B2;
+}
+
+.txt-search-grey {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555555;
+}
+
+.search-btn {
+    margin-left: 200px;
+    min-width: 64px;
+    min-height: 50px;
+    background-color: #46B3B2;
+    border-radius: 8px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+}
+
+.search-btn>img {
+    margin: auto;
+}
+
+.ogl-info{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt-ogl-info{
+    display: flex;
+    align-items: center;
+}
