@@ -65,8 +65,7 @@ body {
 }
 
 .map {
-    min-width: 100%;
-    min-height: 100%;
+width: 100%;
 }
 
 .border-search {
@@ -161,6 +160,11 @@ body {
     width: 84px;
     height: 84px;
     margin-top: -35px;
+}
+
+.doctor-background> img{
+    border-radius: 8px;
+    
 }
 
 .doctor-location {
