@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -230,4 +230,45 @@ body {
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
+}
+
+.footer__block__info {
+    margin-top: 120px;
+    background: linear-gradient(93.67deg, #46B3B2 7.41%, rgba(36, 194, 193, 0.9) 79.91%);
+    box-shadow: 0px 10px 12px rgba(70, 179, 178, 0.25);
+    height: 228px;
+    width: 1200px;
+    border-radius: 0 0 0 80px;
+}
+
+
+.block__info__background {
+    background: url(/img/footer_block_info.png);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer__info__text {
+    flex: 2;
+}
+
+.footer__info__text>div>img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer__info__button {
+    flex: 1;
+}
+
+.footer__info__button > div{
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    width: 226px;
+    height: 59px;
+    display: block;
+    margin: 0 auto;
 }
