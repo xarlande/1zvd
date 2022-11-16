@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    color: #939393;
 }
 
 .container {
@@ -162,30 +165,38 @@ body {
 
 .doctor-location {
     margin-top: 30px;
+    color: #939393;
 }
 
 .doctor-name {
     margin-top: 35px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .doctor-strip {
     background-color: #E9EFF8;
-    width: 321px;
+    width: 350px;
     height: 1px;
     margin-top: 15px;
 }
 
 .doctor-profession {
     margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #46B3B2;
 }
 
-.doctor-footer{
+.doctor-footer {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
-}
-
-.doctor-info {
-    margin-top: 10px;
+    max-width: 350px;
 }
 
 .doctor-rating {
@@ -193,4 +204,24 @@ body {
     border-radius: 40px;
     width: 51px;
     height: 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.doctor-schedule {
+    background-color: #F5F5F8;
+    border-radius: 40px;
+    width: 101px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.doctor-schedule-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
 }
