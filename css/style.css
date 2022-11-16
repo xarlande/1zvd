@@ -80,6 +80,7 @@ body {
     min-width: 200px;
     justify-content: space-around;
     align-items: center;
+    flex: 1;
 }
 
 .txt-search-gren {
@@ -101,7 +102,6 @@ body {
 }
 
 .search-btn {
-    margin-left: 200px;
     min-width: 64px;
     min-height: 50px;
     background-color: #46B3B2;
@@ -115,14 +115,33 @@ body {
     margin: auto;
 }
 
-.ogl-info{
+.ogl-info {
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
 }
 
-.txt-ogl-info{
+.txt-ogl-info {
     display: flex;
     align-items: center;
+}
+
+.flex_2 {
+    flex: 3;
+}
+
+.doctor-item {
+    min-width: 381px;
+    min-height: 256px;
+    background: #FFFFFF;
+    box-shadow: 0px 11px 25px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.doctor-list{
+    margin-top: 102px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
 }
