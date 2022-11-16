@@ -139,9 +139,17 @@ body {
     border-radius: 8px;
 }
 
-.doctor-list{
+.doctor-list {
     margin-top: 102px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 10px;
+    grid-row-gap: 93px;
+    grid-column-gap: 36px;
+}
+
+.doctor-img {
+    background: linear-gradient(93.67deg, #00AB77 7.41%, rgba(2, 192, 135, 0.9) 79.91%);
+    border-radius: 8px;
+    width: 84px;
+    height: 84px;
 }
