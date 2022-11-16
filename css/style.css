@@ -64,8 +64,10 @@ body {
     color: #46B3B2;
 }
 
-.map {
-width: 100%;
+.map img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
 }
 
 .border-search {
@@ -162,9 +164,9 @@ width: 100%;
     margin-top: -35px;
 }
 
-.doctor-background> img{
+.doctor-background>img {
     border-radius: 8px;
-    
+
 }
 
 .doctor-location {
