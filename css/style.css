@@ -301,14 +301,39 @@ footer {
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
 }
 
-.footer__bottom__container__2{
+.footer__bottom__container__2 {
   flex: 3;
+  height: 200px;
 }
 
-.footer__bottom__container__1{
+.footer__bottom__container__2>div {
+  color: #555555;
+}
+
+.footer__bottom__container__1 {
   flex: 2;
   margin-right: 173px;
+  height: 200px;
+}
+
+.m__bottom {
+  margin-bottom: 20px;
+}
+
+.mt__bottom {
+  margin-top: 30px;
+}
+
+.footer__bottom__info2 {
+  background: linear-gradient(93.67deg, #46B3B2 7.41%, rgba(36, 194, 193, 0.9) 79.91%);
+  height: 60px;
+  margin-top: 80px;
+}
+
+.footer__bottom__info2__flex {
+  display: flex;
+  justify-content: space-between;
 }
