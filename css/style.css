@@ -155,6 +155,19 @@ body {
   grid-column-gap: 36px;
 }
 
+@media screen and (max-width: 900px) {
+  .doctor-list{
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+
+@media  screen and (max-width: 400px) {
+  .doctor-list{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .doctor-img {
   background: linear-gradient(93.67deg,
       #00ab77 7.41%,
