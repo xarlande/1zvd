@@ -114,7 +114,7 @@ body {
   align-items: center;
 }
 
-.search-btn>img {
+.search-btn> img {
   margin: auto;
 }
 
@@ -264,7 +264,7 @@ body {
   flex: 1;
 }
 
-.footer__info__button>div {
+.footer__info__button> div>a {
   background: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 8px;
@@ -276,7 +276,10 @@ body {
   justify-content: center;
 }
 
-.footer__info__button>div>div {
+.footer__info__button >div>a {
+  text-decoration: none;
+}
+.footer__info__button>div>a>div {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
