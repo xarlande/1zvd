@@ -80,6 +80,12 @@ body {
     align-items: center;
   }
   .block__partition{display: none;}
+  .button-header.button {
+    flex-direction: column;
+  }
+  .button-header.button > li {
+    margin-top: 10px;
+  }
 }
 
 
