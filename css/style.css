@@ -5,7 +5,9 @@ body {
   color: #939393;
 }
 
-input{border: none}
+input {
+  border: none
+}
 
 .container {
   max-width: 1140px;
@@ -33,12 +35,12 @@ input{border: none}
   min-height: 100%;
 }
 
-.button>ul>li>a{
+.button>ul>li>a {
   text-decoration: none;
   color: #555555;
 }
 
-.button>ul>li{
+.button>ul>li {
   text-decoration: none;
   color: #555555;
 }
@@ -82,16 +84,25 @@ input{border: none}
 }
 
 @media screen and (max-width:500px) {
-  .border-search{
+  .border-search {
     flex-direction: column;
     align-items: center;
   }
-  .block__partition{display: none;}
+
+  .block__partition {
+    display: none;
+  }
+
   .button-header.button>ul {
     flex-direction: column;
   }
-  .button-header.button > li {
+
+  .button-header.button>li {
     margin-top: 10px;
+  }
+
+  .search-selector {
+    margin-top: 5px;
   }
 }
 
@@ -114,7 +125,7 @@ input{border: none}
   align-items: center;
 }
 
-.txt-search-gren::after{
+.txt-search-gren::after {
   content: "";
   margin-top: 10%;
   margin-left: 10px;
@@ -123,13 +134,13 @@ input{border: none}
 
 }
 
-.txt-search-gren::before{
+.txt-search-gren::before {
   content: url(/img/location__icon.svg);
   margin-top: 5%;
   margin-right: 5px;
 }
 
-.block__partition{
+.block__partition {
   width: 1px;
   height: 60px;
   background: #F7F7F9;
@@ -149,7 +160,7 @@ input{border: none}
 
 
 
-.txt-search-grey::after{
+.txt-search-grey::after {
   content: "";
   margin-top: 10%;
   margin-left: 10px;
@@ -181,14 +192,15 @@ input{border: none}
 .txt-ogl-info {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
-.button__sort::after{
+.button__sort::after {
   content: "";
   margin-top: 5%;
   margin-left: 10px;
   border: 4px solid transparent;
-  border-top: 4px solid #46B3B2;
+  border-top: 4px solid #555555;
 }
 
 .flex_2 {
@@ -225,6 +237,7 @@ input{border: none}
   .doctor-list {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .logo-main>div {
     display: none;
   }
@@ -384,9 +397,9 @@ footer {
 }
 
 .footer__bottom__container__2 {
-display: flex;
-flex: 2;
-margin-top: -2%;
+  display: flex;
+  flex: 2;
+  margin-top: -2%;
 }
 
 .footer__bottom__container__2>div {
@@ -418,6 +431,6 @@ margin-top: -2%;
   align-items: flex-start;
 }
 
-.footer__bottom__container__2__item{
+.footer__bottom__container__2__item {
   flex: 1;
 }
