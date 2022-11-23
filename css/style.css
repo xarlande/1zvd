@@ -26,13 +26,16 @@ input {
   color: #555555;
 }
 
-.button-header.button>ul {
+.button-header.button {
   list-style: none;
   text-transform: capitalize;
   display: flex;
-  gap: 5%;
   align-items: center;
   min-height: 100%;
+}
+
+.button-header.button>ul{
+  list-style: none;
 }
 
 .button>ul>li>a {
@@ -93,12 +96,12 @@ input {
     display: none;
   }
 
-  .button-header.button>ul {
+  .button-header.button {
     flex-direction: column;
   }
 
-  .button-header.button>li {
-    margin-top: 10px;
+  .button-header.button>ul {
+    margin: 10px;
   }
 
   .search-selector {
@@ -237,7 +240,8 @@ input {
   .doctor-list {
     grid-template-columns: repeat(1, 1fr);
   }
-
+}
+@media screen and (max-width: 925px) {
   .logo-main>div {
     display: none;
   }
