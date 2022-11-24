@@ -26,16 +26,14 @@ input {
   color: #555555;
 }
 
-.button-header.button {
+.button-header.button>ul {
   list-style: none;
   text-transform: capitalize;
   display: flex;
   align-items: center;
   min-height: 100%;
-}
-
-.button-header.button>ul{
-  list-style: none;
+  gap: 3%;
+  justify-content: flex-end;
 }
 
 .button>ul>li>a {
@@ -152,7 +150,7 @@ input {
 
 .txt-search-grey {
   font-family: "Lato", sans-serif;
-  font-style: normal;
+  font-style: normal;image.png
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
