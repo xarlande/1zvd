@@ -115,7 +115,7 @@ input {
   flex: 1;
 }
 
-.txt-search-gren {
+.txt-search-green {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -126,7 +126,7 @@ input {
   align-items: center;
 }
 
-.txt-search-gren::after {
+.txt-search-green::after {
   content: "";
   margin-top: 5%;
   margin-left: 10px;
@@ -135,7 +135,7 @@ input {
 
 }
 
-.txt-search-gren::before {
+.txt-search-green::before {
   content: url(/img/location__icon.svg);
   margin-top: 5%;
   margin-right: 5px;
@@ -150,7 +150,7 @@ input {
 
 .txt-search-grey {
   font-family: "Lato", sans-serif;
-  font-style: normal;image.png
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
