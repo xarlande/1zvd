@@ -33,6 +33,7 @@ input {
   align-items: center;
   min-height: 100%;
   gap: 3%;
+  padding: 5px;
 }
 
 .button>ul>li>a {

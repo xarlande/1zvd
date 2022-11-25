@@ -1,6 +1,7 @@
-const buttonHeader = document.querySelector('.button-header')
+const classHeader = document.querySelector('.button-header')
+const buttonHeader = document.querySelector(".burger__menu")
+
 
 buttonHeader.addEventListener('click', () => {
-    buttonHeader.classList.add('active')
-    buttonHeader.classList.remove('active')
+    classHeader.classList.toggle('active')
 })
