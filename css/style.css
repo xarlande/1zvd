@@ -398,3 +398,7 @@ footer {
 .footer__bottom__container__2__item {
   flex: 1;
 }
+
+.burger__menu{
+  display: none;
+}
