@@ -4,7 +4,7 @@
         position: fixed;
         width: 100%;
         background-color: white;
-        height: 50px;
+        height: 60px;
     }
 
     .map > img {
@@ -43,7 +43,7 @@
     .button-header.button.active {
         position: fixed;
         right: 0;
-        top: 50px;
+        top: 60px;
         background-color: #00ab77;
         display: block;
         width: 100%;
