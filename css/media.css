@@ -9,15 +9,21 @@
     }
 
     .button-header.button > ul {
-        flex-direction: column;
+        display: block;
     }
 
-    .button-header.button > ul {
-        margin: 10px;
+    .button-header.button{
+        position: absolute;
+        right: 0;
+        top: -150px;
     }
 
     .search-selector {
         margin-top: 5px;
+    }
+
+    .burger__menu{
+        display: block;
     }
 
 }
