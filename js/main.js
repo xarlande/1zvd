@@ -1,5 +1,5 @@
 const classHeader = document.querySelector('.button-header')
-const buttonHeader = document.querySelector(".burger__menu")
+const buttonHeader = document.querySelector(".header__burger-btn")
 
 
 buttonHeader.addEventListener('click', () => {

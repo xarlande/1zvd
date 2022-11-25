@@ -36,6 +36,10 @@ input {
   padding: 5px;
 }
 
+.header__burger-btn{
+  display: none;
+}
+
 .button>ul>li>a {
   text-decoration: none;
   color: #555555;

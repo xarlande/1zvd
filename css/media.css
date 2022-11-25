@@ -1,4 +1,16 @@
 @media screen and (max-width: 500px) {
+    .header-container{
+        top: 0;
+        position: fixed;
+        width: 100%;
+        background-color: #939393;
+    }
+    .map>img{
+        margin-top: 70px;
+    }
+    .mg-t{
+        margin: 0;
+    }
     .border-search {
         flex-direction: column;
         align-items: center;
@@ -17,9 +29,9 @@
     }
 
     .button-header.button.active{
-        position: absolute;
-        right: 0;
-        top: 80px;
+        position: fixed;
+        right: 10px;
+        top: 60px;
         background-color: #00ab77;
         border-radius: 20px;
         display: block;
@@ -29,8 +41,30 @@
         margin-top: 5px;
     }
 
-    .burger__menu{
+    .header__burger-btn {
         display: block;
+        position: fixed;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .header__burger-btn span {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        left: 5px;
+    }
+
+    .header__burger-btn span:nth-child(1) {
+        transform: translateY(-10px);
+    }
+
+    .header__burger-btn span:nth-child(3) {
+        transform: translateY(10px);
     }
 
 }
