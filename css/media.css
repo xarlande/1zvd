@@ -12,10 +12,17 @@
         display: block;
     }
 
-    .button-header.button{
+    .button-header.button {
+        display: none;
+    }
+
+    .button-header.button.active{
         position: absolute;
         right: 0;
-        top: -150px;
+        top: 80px;
+        background-color: #00ab77;
+        border-radius: 20px;
+        display: block;
     }
 
     .search-selector {
