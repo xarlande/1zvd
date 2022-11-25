@@ -33,15 +33,9 @@ input {
   align-items: center;
   min-height: 100%;
   gap: 3%;
-  justify-content: flex-end;
 }
 
 .button>ul>li>a {
-  text-decoration: none;
-  color: #555555;
-}
-
-.button>ul>li {
   text-decoration: none;
   color: #555555;
 }
