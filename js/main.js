@@ -15,8 +15,10 @@ const dropDown = document.querySelector('.dropdown-menu')
 
 let txtButton
 
-for (txtButton in txtButtons) {
-    console.log(txtButton)
+for (txtButton of txtButtons) {
+    console.log(txtButtons)
+    // txtButton.forEach(function (id){
+    // })
 
 }
 
