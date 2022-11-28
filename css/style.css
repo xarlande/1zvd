@@ -150,6 +150,11 @@ input {
   border-top: 4px solid #555555;
 }
 
+.search-selector.open>.txt-search::after{
+  rotate: 180deg;
+}
+
+
 .search-btn {
   min-width: 64px;
   min-height: 50px;
@@ -414,6 +419,11 @@ footer {
   border-radius: 9px;
   width: 100px;
   pointer-events: none;
+  display: none;
+}
+
+.dropdown-menu.open{
+  display: block;
 }
 
 .dropdown-menu>li{
