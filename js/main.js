@@ -9,11 +9,18 @@ buttonHeader.addEventListener('click', () => {
 })
 
 
-const txtButton = document.querySelector('.txt-search')
+const txtButtons = document.querySelectorAll('.txt-search')
 const searchSelector = document.querySelector('.search-selector')
 const dropDown = document.querySelector('.dropdown-menu')
 
-txtButton.addEventListener('click' , () => {
-    dropDown.classList.toggle('open')
-    searchSelector.classList.toggle('open')
-})
+let txtButton
+
+for (txtButton in txtButtons) {
+    console.log(txtButton)
+
+}
+
+// txtButton.addEventListener('click' , () => {
+//     dropDown.classList.toggle('open')
+//     searchSelector.classList.toggle('open')
+// })
