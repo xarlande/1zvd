@@ -5,9 +5,11 @@ body {
   color: #939393;
 }
 
-a{
+a, li, ul{
   text-decoration: none;
+  list-style: none;
 }
+
 
 input {
   border: none
@@ -91,6 +93,7 @@ input {
   justify-content: space-around;
   align-items: center;
   flex: 1;
+  position: relative;
 }
 
 .txt-search-green {
@@ -401,4 +404,18 @@ footer {
 
 .burger__menu{
   display: none;
+}
+
+.dropdown-menu{
+  position: absolute;
+  top: 40px;
+  background-color: #00ab77;
+  border: #555555 solid 1px;
+  border-radius: 9px;
+  width: 100px;
+  pointer-events: none;
+}
+
+.dropdown-menu>li{
+  color: white;
 }
