@@ -93,6 +93,9 @@ input {
   justify-content: space-around;
   align-items: center;
   flex: 1;
+}
+
+.search-selector.open{
   position: relative;
 }
 
