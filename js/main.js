@@ -14,16 +14,37 @@ const searchSelectors = document.querySelectorAll('.search-selector')
 const dropsDown = document.querySelectorAll('.dropdown-menu')
 
 
-txtButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        searchSelectors.forEach((openSelector)=>{
-            openSelector.classList.toggle('open')
-        })
-        dropsDown.forEach((openDrop)=>{
-            openDrop.classList.toggle('open')
-        })
-    })
+txtButtons[0].addEventListener('click', () =>{
+    searchSelectors[0].classList.toggle('open')
+    dropsDown[0].classList.toggle('open')
 })
+
+txtButtons[1].addEventListener('click', () =>{
+    searchSelectors[1].classList.toggle('open')
+    dropsDown[1].classList.toggle('open')
+})
+
+txtButtons[2].addEventListener('click', () =>{
+    searchSelectors[2].classList.toggle('open')
+    dropsDown[2].classList.toggle('open')
+})
+
+txtButtons[3].addEventListener('click', () =>{
+    searchSelectors[3].classList.toggle('open')
+    dropsDown[3].classList.toggle('open')
+})
+
+
+// txtButtons.forEach((btn) => {
+//     console.log(btn)
+//     btn.addEventListener('click', () =>{
+//         console.log('hello')
+//     })
+//     searchSelectors.forEach((openSelector) => {
+//
+//     })
+// })
+
 
 // txtButton.addEventListener('click' , () => {
 //     dropDown.classList.toggle('open')
