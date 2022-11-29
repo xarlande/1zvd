@@ -15,7 +15,9 @@ const dropsDown = document.querySelectorAll('.dropdown-menu')
 
 
 for (const txtButton of txtButtons) {
+
     txtButton.addEventListener('click', () => {
+
         for (const searchSelector of searchSelectors) {
             searchSelector.classList.toggle('open')
         }
