@@ -14,21 +14,16 @@ const searchSelectors = document.querySelectorAll('.search-selector')
 const dropsDown = document.querySelectorAll('.dropdown-menu')
 
 
-for (const txtButton of txtButtons) {
-    txtButton.forEach(function (element) {
-        console.log(element)
+txtButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        searchSelectors.forEach((openSelector)=>{
+            openSelector.classList.toggle('open')
+        })
+        dropsDown.forEach((openDrop)=>{
+            openDrop.classList.toggle('open')
+        })
     })
-    txtButton.addEventListener('click', () => {
-
-        for (const searchSelector of searchSelectors) {
-            searchSelector.classList.toggle('open')
-        }
-        for (const dropDown of dropsDown) {
-            dropDown.classList.toggle('open')
-        }
-    })
-
-}
+})
 
 // txtButton.addEventListener('click' , () => {
 //     dropDown.classList.toggle('open')
