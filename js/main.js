@@ -15,7 +15,9 @@ const dropsDown = document.querySelectorAll('.dropdown-menu')
 
 
 for (const txtButton of txtButtons) {
-
+    txtButton.forEach(function (element) {
+        console.log(element)
+    })
     txtButton.addEventListener('click', () => {
 
         for (const searchSelector of searchSelectors) {
