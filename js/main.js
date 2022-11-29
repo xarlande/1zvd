@@ -10,15 +10,19 @@ buttonHeader.addEventListener('click', () => {
 
 
 const txtButtons = document.querySelectorAll('.txt-search')
-const searchSelector = document.querySelector('.search-selector')
-const dropDown = document.querySelector('.dropdown-menu')
+const searchSelectors = document.querySelectorAll('.search-selector')
+const dropsDown = document.querySelectorAll('.dropdown-menu')
 
-let txtButton
 
-for (txtButton of txtButtons) {
-    console.log(txtButtons)
-    // txtButton.forEach(function (id){
-    // })
+for (const txtButton of txtButtons) {
+    txtButton.addEventListener('click', () => {
+        for (const searchSelector of searchSelectors) {
+            searchSelector.classList.toggle('open')
+        }
+        for (const dropDown of dropsDown) {
+            dropDown.classList.toggle('open')
+        }
+    })
 
 }
 
