@@ -415,12 +415,13 @@ footer {
 .dropdown-menu {
     position: absolute;
     top: 40px;
-    background-color: #00ab77;
+    background-color: white;
     border: #555555 solid 1px;
     border-radius: 9px;
     width: 100px;
     pointer-events: none;
     display: none;
+    height: 100px;
 }
 
 .dropdown-menu.open {
@@ -428,7 +429,7 @@ footer {
 }
 
 .dropdown-menu > li {
-    color: white;
+    color: #555555;
 }
 
 .txt-search{
