@@ -304,7 +304,7 @@ input {
 }
 
 .block__info__background {
-    background: url(/img/footer_block_info.png);
+    background: url(../img/footer_block_info.png);
     height: 100%;
     width: 100%;
     display: flex;
