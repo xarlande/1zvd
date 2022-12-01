@@ -19,7 +19,10 @@ borderSearch.addEventListener('click', (event) =>{
     if(target.closest('.search-selector') && target.closest('LI')){
         let txtSearch = target.closest('.search-selector').querySelector('.txt-search')
         txtSearch.textContent = target.textContent
+        let removeMenu = target.closest('.search-selector').querySelector('.dropdown-menu')
+        removeMenu.classList.toggle(`open`)
     }
+
 })
 
 txtButtons.forEach((elem, index) =>{
