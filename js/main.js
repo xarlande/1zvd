@@ -12,27 +12,24 @@ buttonHeader.addEventListener('click', () => {
 const txtButtons = document.querySelectorAll('.txt-search')
 const searchSelectors = document.querySelectorAll('.search-selector')
 const dropsDown = document.querySelectorAll('.dropdown-menu')
+const borderSearch =document.querySelector('.border-search')
 
-
-txtButtons[0].addEventListener('click', () =>{
-    searchSelectors[0].classList.toggle('open')
-    dropsDown[0].classList.toggle('open')
+borderSearch.addEventListener('click', (event) =>{
+    let target = event.target
+    if(target.closest('.search-selector') && target.closest('LI')){
+        let txtSearch = target.closest('.search-selector').querySelector('.txt-search')
+        txtSearch.textContent = target.textContent
+    }
 })
 
-txtButtons[1].addEventListener('click', () =>{
-    searchSelectors[1].classList.toggle('open')
-    dropsDown[1].classList.toggle('open')
+txtButtons.forEach((elem, index) =>{
+    console.log(elem)
+    elem.addEventListener('click', () =>{
+    searchSelectors[index].classList.toggle('open')
+     dropsDown[index].classList.toggle('open')
+ })
 })
 
-txtButtons[2].addEventListener('click', () =>{
-    searchSelectors[2].classList.toggle('open')
-    dropsDown[2].classList.toggle('open')
-})
-
-txtButtons[3].addEventListener('click', () =>{
-    searchSelectors[3].classList.toggle('open')
-    dropsDown[3].classList.toggle('open')
-})
 
 const buttonSort = document.querySelector('.button__sort-btn')
 const sortDropdown = document.querySelector('.button__sort-dropdown-menu')
