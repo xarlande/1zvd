@@ -30,6 +30,12 @@ borderSearch.addEventListener('click', (event) =>{
 txtButtons.forEach((elem, index) =>{
     console.log(elem)
     elem.addEventListener('click', () =>{
+        for (let i of searchSelectors){
+            i.classList.remove('open')
+        }
+        for (let i of dropsDown){
+            i.classList.remove('open')
+        }
     searchSelectors[index].classList.toggle('open')
      dropsDown[index].classList.toggle('open')
  })
