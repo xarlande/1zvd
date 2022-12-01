@@ -183,12 +183,39 @@ input {
     gap: 5px;
 }
 
-.button__sort::after {
+.button__sort{
+    position: relative;
+    cursor: pointer;
+}
+
+.button__sort-btn{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.button__sort-btn::after {
     content: "";
-    margin-top: 5%;
     margin-left: 10px;
     border: 4px solid transparent;
     border-top: 4px solid #555555;
+}
+
+.button__sort-btn.open::after{
+    transform: rotate(180deg);
+}
+
+.button__sort-dropdown-menu{
+    position: absolute;
+    top: 10px;
+    background-color: white;
+    border: #555555 solid 1px;
+    border-radius: 9px;
+    width: 80px;
+    display: none;
+}
+
+.button__sort-dropdown-menu.open{
+    display: block;
 }
 
 .flex_2 {
