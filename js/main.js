@@ -34,12 +34,11 @@ txtButtons[3].addEventListener('click', () =>{
     dropsDown[3].classList.toggle('open')
 })
 
-const buttonSort = document.querySelector('.button__sort')
-const sortAfter = document.querySelector('.button__sort-btn')
+const buttonSort = document.querySelector('.button__sort-btn')
 const sortDropdown = document.querySelector('.button__sort-dropdown-menu')
 
 buttonSort.addEventListener('click', () => {
-    sortAfter.classList.toggle('open')
+    buttonSort.classList.toggle('open')
     sortDropdown.classList.toggle('open')
 })
 

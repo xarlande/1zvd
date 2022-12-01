@@ -185,13 +185,12 @@ input {
 
 .button__sort{
     position: relative;
-    cursor: pointer;
 }
 
 .button__sort-btn{
     display: flex;
     align-items: center;
-    position: relative;
+    cursor: pointer;
 }
 .button__sort-btn::after {
     content: "";
@@ -216,6 +215,10 @@ input {
 
 .button__sort-dropdown-menu.open{
     display: block;
+}
+
+.button__sort-dropdown-menu.open>li{
+cursor: default;
 }
 
 .flex_2 {
@@ -446,7 +449,6 @@ footer {
     border: #555555 solid 1px;
     border-radius: 9px;
     width: 100px;
-    pointer-events: none;
     display: none;
     height: 100px;
 }
