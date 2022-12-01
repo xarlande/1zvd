@@ -14,15 +14,17 @@ const searchSelectors = document.querySelectorAll('.search-selector')
 const dropsDown = document.querySelectorAll('.dropdown-menu')
 const borderSearch =document.querySelector('.border-search')
 
+
 borderSearch.addEventListener('click', (event) =>{
     let target = event.target
     if(target.closest('.search-selector') && target.closest('LI')){
         let txtSearch = target.closest('.search-selector').querySelector('.txt-search')
         txtSearch.textContent = target.textContent
+        txtSearch.dataset.id = target.dataset.id
         let removeDropDown = target.closest('.search-selector').querySelector('.dropdown-menu')
         let removeSearchSelector = target.closest('.search-selector')
-        removeDropDown.classList.toggle('open')
-        removeSearchSelector.classList.toggle(`open`)
+        removeDropDown.classList.remove('open')
+        removeSearchSelector.classList.remove(`open`)
     }
 
 })
