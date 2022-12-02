@@ -15,6 +15,7 @@ const borderSearch = document.querySelector('.border-search')
 
 borderSearch.addEventListener('click', (event) => {
     let target = event.target
+
     if (target.closest('.search-selector') && target.closest('LI')) {
         let txtSearch = target.closest('.search-selector').querySelector('.txt-search')
         txtSearch.textContent = target.textContent
@@ -25,7 +26,7 @@ borderSearch.addEventListener('click', (event) => {
     if (target.closest('.search-selector')) {
         let txtSearch = target.closest('.search-selector')
         for (let i of searchSelectors ) {
-            if(i.closest('.open')){
+            if(!txtSearch.closest('.open')){
                 i.classList.remove('open')
             }
         }
