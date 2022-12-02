@@ -12,12 +12,12 @@ buttonHeader.addEventListener('click', () => {
 const txtButtons = document.querySelectorAll('.txt-search')
 const searchSelectors = document.querySelectorAll('.search-selector')
 const dropsDown = document.querySelectorAll('.dropdown-menu')
-const borderSearch =document.querySelector('.border-search')
+const borderSearch = document.querySelector('.border-search')
 
 
-borderSearch.addEventListener('click', (event) =>{
+borderSearch.addEventListener('click', (event) => {
     let target = event.target
-    if(target.closest('.search-selector') && target.closest('LI')){
+    if (target.closest('.search-selector') && target.closest('LI')) {
         let txtSearch = target.closest('.search-selector').querySelector('.txt-search')
         txtSearch.textContent = target.textContent
         txtSearch.dataset.id = target.dataset.id
@@ -29,17 +29,17 @@ borderSearch.addEventListener('click', (event) =>{
 
 })
 
-txtButtons.forEach((elem, index) =>{
-    elem.addEventListener('click', () =>{
-        for (let i of searchSelectors){
+txtButtons.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+        for (let i of searchSelectors ) {
             i.classList.remove('open')
         }
-        for (let i of dropsDown){
+        for (let i of dropsDown) {
             i.classList.remove('open')
         }
-    searchSelectors[index].classList.toggle('open')
-     dropsDown[index].classList.toggle('open')
- })
+        searchSelectors[index].classList.toggle('open')
+        dropsDown[index].classList.toggle('open')
+    })
 })
 
 

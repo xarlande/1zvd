@@ -183,15 +183,16 @@ input {
     gap: 5px;
 }
 
-.button__sort{
+.button__sort {
     position: relative;
 }
 
-.button__sort-btn{
+.button__sort-btn {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
+
 .button__sort-btn::after {
     content: "";
     margin-left: 10px;
@@ -199,11 +200,11 @@ input {
     border-top: 4px solid #555555;
 }
 
-.button__sort-btn.open::after{
+.button__sort-btn.open::after {
     transform: rotate(180deg);
 }
 
-.button__sort-dropdown-menu{
+.button__sort-dropdown-menu {
     position: absolute;
     top: 10px;
     background-color: white;
@@ -213,12 +214,12 @@ input {
     display: none;
 }
 
-.button__sort-dropdown-menu.open{
+.button__sort-dropdown-menu.open {
     display: block;
 }
 
-.button__sort-dropdown-menu.open>li{
-cursor: default;
+.button__sort-dropdown-menu.open > li {
+    cursor: default;
 }
 
 .flex_2 {
@@ -461,6 +462,6 @@ footer {
     color: #555555;
 }
 
-.txt-search{
+.txt-search {
     cursor: pointer;
 }
