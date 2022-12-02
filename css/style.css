@@ -454,7 +454,7 @@ footer {
     height: 100px;
 }
 
-.dropdown-menu.open {
+.search-selector.open>.dropdown-menu {
     display: block;
 }
 

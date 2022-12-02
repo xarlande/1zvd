@@ -9,9 +9,7 @@ buttonHeader.addEventListener('click', () => {
 })
 
 
-const txtButtons = document.querySelectorAll('.txt-search')
 const searchSelectors = document.querySelectorAll('.search-selector')
-const dropsDown = document.querySelectorAll('.dropdown-menu')
 const borderSearch = document.querySelector('.border-search')
 
 
@@ -21,26 +19,33 @@ borderSearch.addEventListener('click', (event) => {
         let txtSearch = target.closest('.search-selector').querySelector('.txt-search')
         txtSearch.textContent = target.textContent
         txtSearch.dataset.id = target.dataset.id
-        let removeDropDown = target.closest('.search-selector').querySelector('.dropdown-menu')
         let removeSearchSelector = target.closest('.search-selector')
-        removeDropDown.classList.remove('open')
         removeSearchSelector.classList.remove(`open`)
+    }
+    if (target.closest('.search-selector')) {
+        let txtSearch = target.closest('.search-selector')
+        for (let i of searchSelectors ) {
+            if(i.closest('.open')){
+                i.classList.remove('open')
+            }
+        }
+        txtSearch.classList.toggle('open')
     }
 
 })
 
-txtButtons.forEach((elem, index) => {
-    elem.addEventListener('click', () => {
-        for (let i of searchSelectors ) {
-            i.classList.remove('open')
-        }
-        for (let i of dropsDown) {
-            i.classList.remove('open')
-        }
-        searchSelectors[index].classList.toggle('open')
-        dropsDown[index].classList.toggle('open')
-    })
-})
+// txtButtons.forEach((elem, index) => {
+//     elem.addEventListener('click', () => {
+//         for (let i of searchSelectors ) {
+//             i.classList.remove('open')
+//         }
+//         for (let i of dropsDown) {
+//             i.classList.remove('open')
+//         }
+//         searchSelectors[index].classList.toggle('open')
+//         dropsDown[index].classList.toggle('open')
+//     })
+// })
 
 
 const buttonSort = document.querySelector('.button__sort-btn')
