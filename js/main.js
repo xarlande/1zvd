@@ -20,8 +20,6 @@ borderSearch.addEventListener('click', (event) => {
         let txtSearch = target.closest('.search-selector').querySelector('.txt-search')
         txtSearch.textContent = target.textContent
         txtSearch.dataset.id = target.dataset.id
-        let removeSearchSelector = target.closest('.search-selector')
-        removeSearchSelector.classList.remove(`open`)
     }
     if (target.closest('.search-selector')) {
         let txtSearch = target.closest('.search-selector')
