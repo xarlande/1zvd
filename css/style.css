@@ -54,7 +54,7 @@ input {
     align-items: center;
 }
 
-.logo-main {
+.logo-main>a {
     display: flex;
     gap: 15px;
     align-items: center;
