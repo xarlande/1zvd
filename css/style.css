@@ -183,7 +183,7 @@ input {
     gap: 5px;
 }
 
-.button__sort {
+.button__sort.open {
     position: relative;
 }
 
@@ -200,7 +200,7 @@ input {
     border-top: 4px solid #555555;
 }
 
-.button__sort-btn.open::after {
+.button__sort.open > .button__sort-btn::after {
     transform: rotate(180deg);
 }
 

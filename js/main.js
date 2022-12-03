@@ -47,7 +47,7 @@ borderSearch.addEventListener('click', (event) => {
 // })
 
 
-const buttonSort = document.querySelector('.button__sort-btn')
+const buttonSort = document.querySelector('.button__sort')
 const sortDropdown = document.querySelector('.button__sort-dropdown-menu')
 
 buttonSort.addEventListener('click', () => {

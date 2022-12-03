@@ -97,6 +97,11 @@
     .dropdown-menu {
         top: 10px;
     }
+
+    .footer__bottom__info {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -112,7 +117,7 @@
 }
 
 @media screen and (max-width: 925px) {
-    .logo-main > div {
+    .logo-main> a > div {
         display: none;
     }
 }
