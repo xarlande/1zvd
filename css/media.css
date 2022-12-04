@@ -98,20 +98,20 @@
         top: 10px;
     }
 
-    .footer__bottom__info {
+    .footer__info {
         flex-direction: column;
         gap: 15px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .doctor-list {
+    .doctor__list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 800px) {
-    .doctor-list {
+    .doctor__list {
         grid-template-columns: repeat(1, 1fr);
     }
 }
