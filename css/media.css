@@ -1,5 +1,5 @@
 @media screen and (max-width: 500px) {
-    .header-container {
+    .header__container {
         top: 0;
         position: fixed;
         width: 100%;
@@ -19,26 +19,26 @@
         display: none;
     }
 
-    .button-header.button > ul {
+    .button__header.button > ul {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .button-header.button > ul > li {
+    .button__header.button > ul > li {
         margin: 20px auto 0 auto;
     }
 
-    .button-header.button > ul > li > a {
+    .button__header.button > ul > li > a {
         color: white;
         font-size: 25px;
     }
 
-    .button-header.button {
+    .button__header.button {
         display: none;
     }
 
-    .button-header.button.active {
+    .button__header.button.active {
         position: fixed;
         right: 0;
         top: 60px;
@@ -48,11 +48,11 @@
         height: 100%;
     }
 
-    .search-selector {
+    .search__selector {
         margin-top: 5px;
     }
 
-    .header__burger-btn {
+    .header__burger_btn {
         display: block;
         position: fixed;
         right: 10px;
@@ -62,7 +62,7 @@
         background-color: transparent;
     }
 
-    .header__burger-btn span {
+    .header__burger_btn span {
         position: absolute;
         width: 30px;
         height: 3px;
@@ -70,31 +70,31 @@
         left: 5px;
     }
 
-    .header__burger-btn span:nth-child(1) {
+    .header__burger_btn span:nth-child(1) {
         transform: translateY(-10px);
     }
 
-    .header__burger-btn span:nth-child(3) {
+    .header__burger_btn span:nth-child(3) {
         transform: translateY(10px);
     }
 
-    .container.header-container.active > .header__burger-btn > span:nth-child(1) {
+    .container.header__container.active > .header__burger_btn > span:nth-child(1) {
         transform: translateY(0) rotate(45deg);
     }
 
-    .container.header-container.active > .header__burger-btn > span:nth-child(2) {
+    .container.header__container.active > .header__burger_btn > span:nth-child(2) {
         display: none;
     }
 
-    .container.header-container.active > .header__burger-btn > span:nth-child(3) {
+    .container.header__container.active > .header__burger_btn > span:nth-child(3) {
         transform: translateY(0) rotate(-45deg);
     }
 
-    .dropdown-menu.gren {
+    .dropdown__menu.gren {
         top: 20px;
     }
 
-    .dropdown-menu {
+    .dropdown__menu {
         top: 10px;
     }
 

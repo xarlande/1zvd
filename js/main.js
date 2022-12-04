@@ -1,6 +1,6 @@
-const classHeader = document.querySelector('.button-header')
-const buttonHeader = document.querySelector(".header__burger-btn")
-const containerHeader = document.querySelector('.container.header-container')
+const classHeader = document.querySelector('.button__header')
+const buttonHeader = document.querySelector(".header__burger_btn")
+const containerHeader = document.querySelector('.container.header__container')
 
 
 buttonHeader.addEventListener('click', () => {
@@ -9,20 +9,20 @@ buttonHeader.addEventListener('click', () => {
 })
 
 
-const searchSelectors = document.querySelectorAll('.search-selector')
+const searchSelectors = document.querySelectorAll('.search__selector')
 const borderSearch = document.querySelector('.border-search')
 
 
 borderSearch.addEventListener('click', (event) => {
     let target = event.target
 
-    if (target.closest('.search-selector') && target.closest('LI')) {
-        let txtSearch = target.closest('.search-selector').querySelector('.txt-search')
+    if (target.closest('.search__selector') && target.closest('LI')) {
+        let txtSearch = target.closest('.search__selector').querySelector('.txt-search')
         txtSearch.textContent = target.textContent
         txtSearch.dataset.id = target.dataset.id
     }
-    if (target.closest('.search-selector')) {
-        let txtSearch = target.closest('.search-selector')
+    if (target.closest('.search__selector')) {
+        let txtSearch = target.closest('.search__selector')
         for (let i of searchSelectors ) {
             if(!txtSearch.closest('.open')){
                 i.classList.remove('open')
