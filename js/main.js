@@ -10,7 +10,7 @@ buttonHeader.addEventListener('click', () => {
 
 
 const searchSelectors = document.querySelectorAll('.search__selector')
-const borderSearch = document.querySelector('.border-search')
+const borderSearch = document.querySelector('.border__search')
 
 
 borderSearch.addEventListener('click', (event) => {
