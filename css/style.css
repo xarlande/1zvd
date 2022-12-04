@@ -429,13 +429,13 @@ footer {
     margin-top: 80px;
 }
 
-.footer__bottom__info2__flex {
+.footer__flex {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.footer__bottom__container__2__item {
+.container__item_two {
     flex: 1;
 }
 
