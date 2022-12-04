@@ -54,7 +54,7 @@ input {
     align-items: center;
 }
 
-.logo__main>a {
+.logo__main > a {
     display: flex;
     gap: 15px;
     align-items: center;
@@ -170,14 +170,14 @@ input {
     margin: auto;
 }
 
-.ogl-info {
+.ogl__info {
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
 }
 
-.txt-ogl-info {
+.ogl__txt {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -204,7 +204,7 @@ input {
     transform: rotate(180deg);
 }
 
-.button__sort-dropdown-menu {
+.sort__dropdownMenu {
     position: absolute;
     top: 10px;
     background-color: white;
@@ -214,11 +214,11 @@ input {
     display: none;
 }
 
-.button__sort-dropdown-menu.open {
+.sort__dropdownMenu.open {
     display: block;
 }
 
-.button__sort-dropdown-menu.open > li {
+.sort__dropdownMenu.open > li {
     cursor: default;
 }
 

@@ -23,14 +23,22 @@ borderSearch.addEventListener('click', (event) => {
     }
     if (target.closest('.search__selector')) {
         let txtSearch = target.closest('.search__selector')
-        for (let i of searchSelectors ) {
-            if(!txtSearch.closest('.open')){
+        for (let i of searchSelectors) {
+            if (!txtSearch.closest('.open')) {
                 i.classList.remove('open')
             }
         }
         txtSearch.classList.toggle('open')
     }
 
+})
+
+const buttonSort = document.querySelector('.button__sort')
+const sortDropdown = document.querySelector('.sort__dropdownMenu')
+
+buttonSort.addEventListener('click', () => {
+    buttonSort.classList.toggle('open')
+    sortDropdown.classList.toggle('open')
 })
 
 // txtButtons.forEach((elem, index) => {
@@ -45,30 +53,3 @@ borderSearch.addEventListener('click', (event) => {
 //         dropsDown[index].classList.toggle('open')
 //     })
 // })
-
-
-const buttonSort = document.querySelector('.button__sort')
-const sortDropdown = document.querySelector('.button__sort-dropdown-menu')
-
-buttonSort.addEventListener('click', () => {
-    buttonSort.classList.toggle('open')
-    sortDropdown.classList.toggle('open')
-})
-
-
-// txtButtons.forEach((btn) => {
-//     console.log(btn)
-//     btn.addEventListener('click', () =>{
-//         console.log('hello')
-//     })
-//     searchSelectors.forEach((openSelector) => {
-//
-//     })
-// })
-
-
-// txtButton.addEventListener('click' , () => {
-//     dropDown.classList.toggle('open')
-//     searchSelector.classList.toggle('open')
-// })
-

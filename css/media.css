@@ -90,7 +90,7 @@
         transform: translateY(0) rotate(-45deg);
     }
 
-    .dropdown__menu.gren {
+    .dropdown__menu.green {
         top: 20px;
     }
 
@@ -117,7 +117,7 @@
 }
 
 @media screen and (max-width: 925px) {
-    .logo__main> a > div {
+    .logo__main > a > div {
         display: none;
     }
 }
