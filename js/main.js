@@ -11,10 +11,15 @@ buttonHeader.addEventListener('click', () => {
 containerHeader.addEventListener('click', (event) => {
     let target = event.target
 
-    if (target.closest(".button__header")&&target.closest('.button__header_one')) {
+    if (target.closest('.header__container')&&target.closest('.button__header_one')) {
         console.log('sss')
-        let buttonHelp = target.closest('.header__container')
-        buttonHelp.classList.toggle('open')
+        let buttonOpen = target.closest('.header__container').querySelector('.contact')
+        buttonOpen.classList.add('open')
+
+    }
+    if (target.closest('.contact')&&target.closest('.contact__container_close')) {
+        let buttonClose = target.closest('.header__container').querySelector('.contact')
+        buttonClose.classList.remove('open')
     }
 })
 

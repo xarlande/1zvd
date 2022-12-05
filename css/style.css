@@ -471,9 +471,12 @@ footer {
     position: fixed;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     top: 0;
     left: 0;
+}
+.contact.open{
+    display: block;
 }
 .contact__opacity{
     position: absolute;
@@ -491,6 +494,25 @@ footer {
     height: 200px;
     top: calc(50% - 100px);
     left: calc(50% - 100px);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact__container_close{
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    color: #e9eff8;
 }
 
 
