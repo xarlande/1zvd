@@ -18,8 +18,9 @@ borderSearch.addEventListener('click', (event) => {
 
     if (target.closest('.search__selector') && target.closest('LI')) {
         let txtSearch = target.closest('.search__selector').querySelector('.txt__search')
+        let inputSearch = target.closest('.search__selector').querySelector('INPUT')
         txtSearch.textContent = target.textContent
-        txtSearch.dataset.id = target.dataset.id
+        inputSearch.value = target.dataset.id
     }
     if (target.closest('.search__selector')) {
         let txtSearch = target.closest('.search__selector')
