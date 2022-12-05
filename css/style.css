@@ -474,6 +474,7 @@ footer {
     display: none;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 .contact.open{
     display: block;
@@ -493,7 +494,7 @@ footer {
     width: 400px;
     height: 300px;
     top: calc(50% - 150px);
-    left: calc(50% - 150px);
+    left: calc(50% - 200px);
     color: black;
     display: flex;
     flex-direction: column;
