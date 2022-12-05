@@ -490,10 +490,10 @@ footer {
     position: absolute;
     opacity: 1;
     background-color: white;
-    width: 200px;
-    height: 200px;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
+    width: 300px;
+    height: 300px;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
     color: black;
     display: flex;
     flex-direction: column;
@@ -502,8 +502,11 @@ footer {
     gap: 15px;
 }
 
-.contact__container_close{
+.contact__container>div{
     margin-left: 10px;
+}
+
+.contact__container_close{
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -513,6 +516,12 @@ footer {
     height: 30px;
     border-radius: 10px;
     color: #e9eff8;
+    margin-bottom: 20px;
+}
+
+.contact__button {
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 
