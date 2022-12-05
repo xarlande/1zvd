@@ -16,12 +16,15 @@ containerHeader.addEventListener('click', (event) => {
     let target = event.target
 
     if (target.closest('.header__container')&&target.closest('.button__header_one')) {
-        console.log('sss')
         let buttonOpen = target.closest('.header__container').querySelector('.contact')
         buttonOpen.classList.add('open')
 
     }
     if (target.closest('.contact')&&target.closest('.contact__container_close')) {
+        let buttonClose = target.closest('.header__container').querySelector('.contact')
+        buttonClose.classList.remove('open')
+    }
+    if (target.closest('.contact__opacity')){
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
     }
