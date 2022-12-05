@@ -65,6 +65,7 @@ input {
     box-shadow: 0 10px 20px rgba(70, 179, 178, 0.15);
     border-radius: 58px;
     padding: 15px 24px;
+    cursor: pointer;
 }
 
 .button__header_one > a {
@@ -465,3 +466,33 @@ footer {
 .txt__search {
     cursor: pointer;
 }
+
+.contact {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+.contact__opacity{
+    position: absolute;
+    opacity: .2;
+    background: black;
+    width: 100%;
+    height: 100%;
+}
+
+.contact__container{
+    position: absolute;
+    opacity: 1;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+}
+
+
+
+

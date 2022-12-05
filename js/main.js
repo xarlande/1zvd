@@ -1,6 +1,6 @@
 const classHeader = document.querySelector('.button__header')
 const buttonHeader = document.querySelector(".header__burger_btn")
-const containerHeader = document.querySelector('.container.header__container')
+const containerHeader = document.querySelector('.header__container')
 
 
 buttonHeader.addEventListener('click', () => {
@@ -8,9 +8,20 @@ buttonHeader.addEventListener('click', () => {
     containerHeader.classList.toggle('active')
 })
 
+containerHeader.addEventListener('click', (event) => {
+    let target = event.target
+
+    if (target.closest(".button__header")&&target.closest('.button__header_one')) {
+        console.log('sss')
+        let buttonHelp = target.closest('.header__container')
+        buttonHelp.classList.toggle('open')
+    }
+})
+
 
 const searchSelectors = document.querySelectorAll('.search__selector')
 const borderSearch = document.querySelector('.border__search')
+
 
 
 borderSearch.addEventListener('click', (event) => {
@@ -32,7 +43,9 @@ borderSearch.addEventListener('click', (event) => {
         txtSearch.classList.toggle('open')
     }
 
+
 })
+
 
 const buttonSort = document.querySelector('.button__sort')
 const sortDropdown = document.querySelector('.sort__dropdownMenu')
