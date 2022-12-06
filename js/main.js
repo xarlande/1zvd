@@ -5,9 +5,15 @@ const buttonSort = document.querySelector('.button__sort')
 const sortDropdown = document.querySelector('.sort__dropdownMenu')
 const searchSelectors = document.querySelectorAll('.search__selector')
 const borderSearch = document.querySelector('.border__search')
-
+const Body = document.querySelector('body')
 
 buttonHeader.addEventListener('click', () => {
+    Body.classList.toggle('nonScroll')
+    sortDropdown.classList.remove('open')
+    buttonSort.classList.remove('open')
+    for (let i of searchSelectors) {
+        i.classList.remove('open')
+    }
     classHeader.classList.toggle('active')
     containerHeader.classList.toggle('active')
 })
@@ -17,16 +23,24 @@ containerHeader.addEventListener('click', (event) => {
 
     if (target.closest('.header__container')&&target.closest('.button__header_one')) {
         let buttonOpen = target.closest('.header__container').querySelector('.contact')
+        let menuClose = target.closest('.button__header')
+        let burgerClose = target.closest('.header__container')
+        for (let i of searchSelectors) {
+            i.classList.remove('open')
+        }
         buttonOpen.classList.add('open')
-
+        menuClose.classList.remove('active')
+        burgerClose.classList.remove('active')
     }
     if (target.closest('.contact')&&target.closest('.contact__container_close')) {
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
+        Body.classList.remove('nonScroll')
     }
     if (target.closest('.contact__opacity')){
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
+        Body.classList.remove('nonScroll')
     }
 
 })
@@ -70,3 +84,8 @@ buttonSort.addEventListener('click', () => {
 //         dropsDown[index].classList.toggle('open')
 //     })
 // })
+
+// if (target.closest('.contact')&&target.closest('BUTTON')){
+//     let buttonClose = target.closest('.header__container').querySelector('.contact')
+//     buttonClose.classList.remove('open')
+// }

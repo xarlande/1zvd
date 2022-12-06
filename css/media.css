@@ -102,6 +102,10 @@
         flex-direction: column;
         gap: 15px;
     }
+
+    body.nonScroll {
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-width: 1200px) {

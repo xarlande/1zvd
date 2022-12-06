@@ -491,10 +491,10 @@ footer {
     position: absolute;
     opacity: 1;
     background-color: white;
-    width: 400px;
+    width: 350px;
     height: 300px;
     top: calc(50% - 150px);
-    left: calc(50% - 200px);
+    left: calc(50% - 175px);
     color: black;
     display: flex;
     flex-direction: column;
@@ -504,12 +504,15 @@ footer {
 }
 
 .contact__container>div{
-    margin: 0 10px;
+    padding: 0 10px;
 }
 
 .contact__container>div>label{
     display: flex;
     justify-content: space-between;
+    color: #939393;
+    font-size: 15px;
+    align-items: center;
 }
 
 .contact__container_close{
@@ -518,17 +521,38 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: crimson;
-    width: 60px;
+    width: 80px;
     height: 30px;
     border-radius: 10px;
     color: #e9eff8;
     margin-bottom: 20px;
+    margin-left: 75%;
+    font-size: 15px;
 }
 
-.contact__button {
-    margin-top: 10px;
-    border-radius: 10px;
+
+.contact__container > div > label > input {
+    border-radius: 5px;
+    border: 1px solid #939393;
+    padding: 5px;
 }
+
+.contact__container > div > label > input:focus-visible{
+    outline: none;
+}
+
+.contact__container > button {
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #46b3b2;
+    color: white;
+    font-size: 15px;
+}
+
 
 
 
