@@ -37,10 +37,6 @@ containerHeader.addEventListener('click', (event) => {
         buttonClose.classList.remove('open')
         body.classList.remove('active')
     }
-    // if (target.closest('.contact')&&target.closest('BUTTON')){
-    //     let buttonClose = target.closest('.header__container').querySelector('.contact')
-    //     buttonClose.classList.remove('open')
-    // }
     if (target.closest('.contact__opacity')){
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
@@ -88,3 +84,8 @@ buttonSort.addEventListener('click', () => {
 //         dropsDown[index].classList.toggle('open')
 //     })
 // })
+
+// if (target.closest('.contact')&&target.closest('BUTTON')){
+//     let buttonClose = target.closest('.header__container').querySelector('.contact')
+//     buttonClose.classList.remove('open')
+// }
