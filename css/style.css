@@ -491,10 +491,10 @@ footer {
     position: absolute;
     opacity: 1;
     background-color: white;
-    width: 400px;
+    width: 350px;
     height: 300px;
     top: calc(50% - 150px);
-    left: calc(50% - 200px);
+    left: calc(50% - 175px);
     color: black;
     display: flex;
     flex-direction: column;
