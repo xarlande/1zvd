@@ -6,8 +6,10 @@ const sortDropdown = document.querySelector('.sort__dropdownMenu')
 const searchSelectors = document.querySelectorAll('.search__selector')
 const borderSearch = document.querySelector('.border__search')
 
-
 buttonHeader.addEventListener('click', () => {
+    for (let i of searchSelectors) {
+        i.classList.remove('open')
+    }
     classHeader.classList.toggle('active')
     containerHeader.classList.toggle('active')
 })
@@ -19,6 +21,9 @@ containerHeader.addEventListener('click', (event) => {
         let buttonOpen = target.closest('.header__container').querySelector('.contact')
         let menuClose = target.closest('.button__header')
         let burgerClose = target.closest('.header__container')
+        for (let i of searchSelectors) {
+            i.classList.remove('open')
+        }
         buttonOpen.classList.add('open')
         menuClose.classList.remove('active')
         burgerClose.classList.remove('active')
