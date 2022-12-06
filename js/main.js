@@ -5,10 +5,10 @@ const buttonSort = document.querySelector('.button__sort')
 const sortDropdown = document.querySelector('.sort__dropdownMenu')
 const searchSelectors = document.querySelectorAll('.search__selector')
 const borderSearch = document.querySelector('.border__search')
-const body = document.querySelector('body')
+const Body = document.querySelector('body')
 
 buttonHeader.addEventListener('click', () => {
-    body.classList.toggle('active')
+    Body.classList.toggle('nonScroll')
     sortDropdown.classList.remove('open')
     buttonSort.classList.remove('open')
     for (let i of searchSelectors) {
@@ -35,12 +35,12 @@ containerHeader.addEventListener('click', (event) => {
     if (target.closest('.contact')&&target.closest('.contact__container_close')) {
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
-        body.classList.remove('active')
+        Body.classList.remove('nonScroll')
     }
     if (target.closest('.contact__opacity')){
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
-        body.classList.remove('active')
+        Body.classList.remove('nonScroll')
     }
 
 })
