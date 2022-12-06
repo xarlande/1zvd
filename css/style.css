@@ -553,5 +553,9 @@ footer {
     font-size: 15px;
 }
 
+body.active {
+    overflow: hidden;
+}
+
 
 

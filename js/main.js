@@ -5,8 +5,10 @@ const buttonSort = document.querySelector('.button__sort')
 const sortDropdown = document.querySelector('.sort__dropdownMenu')
 const searchSelectors = document.querySelectorAll('.search__selector')
 const borderSearch = document.querySelector('.border__search')
+const body = document.querySelector('body')
 
 buttonHeader.addEventListener('click', () => {
+    body.classList.toggle('active')
     for (let i of searchSelectors) {
         i.classList.remove('open')
     }
@@ -27,6 +29,7 @@ containerHeader.addEventListener('click', (event) => {
         buttonOpen.classList.add('open')
         menuClose.classList.remove('active')
         burgerClose.classList.remove('active')
+        body.classList.remove('active')
     }
     if (target.closest('.contact')&&target.closest('.contact__container_close')) {
         let buttonClose = target.closest('.header__container').querySelector('.contact')
