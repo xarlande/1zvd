@@ -526,13 +526,10 @@ footer {
     border-radius: 10px;
     color: #e9eff8;
     margin-bottom: 20px;
+    margin-left: 75%;
     font-size: 15px;
 }
 
-.contact__button {
-    margin-top: 10px;
-    border-radius: 10px;
-}
 
 .contact__container > div > label > input {
     border-radius: 5px;
