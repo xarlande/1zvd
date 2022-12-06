@@ -31,6 +31,7 @@ containerHeader.addEventListener('click', (event) => {
         buttonOpen.classList.add('open')
         menuClose.classList.remove('active')
         burgerClose.classList.remove('active')
+        body.classList.add('active')
     }
     if (target.closest('.contact')&&target.closest('.contact__container_close')) {
         let buttonClose = target.closest('.header__container').querySelector('.contact')
