@@ -9,6 +9,8 @@ const body = document.querySelector('body')
 
 buttonHeader.addEventListener('click', () => {
     body.classList.toggle('active')
+    sortDropdown.classList.remove('open')
+    buttonSort.classList.remove('open')
     for (let i of searchSelectors) {
         i.classList.remove('open')
     }
@@ -29,11 +31,11 @@ containerHeader.addEventListener('click', (event) => {
         buttonOpen.classList.add('open')
         menuClose.classList.remove('active')
         burgerClose.classList.remove('active')
-        body.classList.remove('active')
     }
     if (target.closest('.contact')&&target.closest('.contact__container_close')) {
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
+        body.classList.remove('active')
     }
     // if (target.closest('.contact')&&target.closest('BUTTON')){
     //     let buttonClose = target.closest('.header__container').querySelector('.contact')
@@ -42,6 +44,7 @@ containerHeader.addEventListener('click', (event) => {
     if (target.closest('.contact__opacity')){
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
+        body.classList.remove('active')
     }
 
 })
