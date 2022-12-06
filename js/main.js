@@ -24,6 +24,10 @@ containerHeader.addEventListener('click', (event) => {
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
     }
+    if (target.closest('.contact')&&target.closest('BUTTON')){
+        let buttonClose = target.closest('.header__container').querySelector('.contact')
+        buttonClose.classList.remove('open')
+    }
     if (target.closest('.contact__opacity')){
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
