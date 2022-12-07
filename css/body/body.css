@@ -477,10 +477,12 @@ footer {
     left: 0;
     z-index: 2;
 }
-.contact.open{
+
+.contact.open {
     display: block;
 }
-.contact__opacity{
+
+.contact__opacity {
     position: absolute;
     opacity: .2;
     background: black;
@@ -488,7 +490,7 @@ footer {
     height: 100%;
 }
 
-.contact__container{
+.contact__container {
     position: absolute;
     opacity: 1;
     background-color: white;
@@ -504,11 +506,11 @@ footer {
     gap: 15px;
 }
 
-.contact__container>div{
+.contact__container > div {
     padding: 0 10px;
 }
 
-.contact__container>div>label{
+.contact__container > div > label {
     display: flex;
     justify-content: space-between;
     color: #939393;
@@ -516,7 +518,7 @@ footer {
     align-items: center;
 }
 
-.contact__container_close{
+.contact__container_close {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -538,7 +540,7 @@ footer {
     padding: 5px;
 }
 
-.contact__container > div > label > input:focus-visible{
+.contact__container > div > label > input:focus-visible {
     outline: none;
 }
 

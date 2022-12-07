@@ -21,7 +21,7 @@ buttonHeader.addEventListener('click', () => {
 containerHeader.addEventListener('click', (event) => {
     let target = event.target
 
-    if (target.closest('.header__container')&&target.closest('.button__header_one')) {
+    if (target.closest('.header__container') && target.closest('.button__header_one')) {
         let buttonOpen = target.closest('.header__container').querySelector('.contact')
         let menuClose = target.closest('.button__header')
         let burgerClose = target.closest('.header__container')
@@ -39,7 +39,7 @@ containerHeader.addEventListener('click', (event) => {
             Body.classList.remove('nonScroll')
         }
     }
-    if (target.closest('.contact__opacity')){
+    if (target.closest('.contact__opacity')) {
         let buttonClose = target.closest('.header__container').querySelector('.contact')
         buttonClose.classList.remove('open')
         Body.classList.remove('nonScroll')
