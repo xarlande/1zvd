@@ -34,7 +34,6 @@
 .header__containerThree_item > ul{
     height: 100%;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     color: #555555;
 }
