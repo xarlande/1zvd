@@ -1,0 +1,5 @@
+@media screen and (max-width: 800px) {
+    .doctor__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

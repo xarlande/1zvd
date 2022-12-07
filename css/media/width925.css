@@ -1,0 +1,5 @@
+@media screen and (max-width: 925px) {
+    .logo__main > a > div {
+        display: none;
+    }
+}
