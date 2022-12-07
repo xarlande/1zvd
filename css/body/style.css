@@ -120,7 +120,7 @@ input {
 }
 
 .txt__search_green::before {
-    content: url(/img/location__icon.svg);
+    content: url(/img/decorationIcon/location__icon.svg);
     margin-top: 5%;
     margin-right: 5px;
 }
@@ -336,7 +336,7 @@ input {
 }
 
 .board__info {
-    background: url(/img/footer_block_info.png);
+    background: url(/img/footer/border/footer_block_info.png);
     height: 100%;
     width: 100%;
     display: flex;
