@@ -5,11 +5,9 @@ body {
     color: #939393;
 }
 
-a, li, ul {
+a{
     text-decoration: none;
-    list-style: none;
 }
-
 
 input {
     border: none
