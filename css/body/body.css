@@ -232,6 +232,7 @@ input {
     background: #ffffff;
     box-shadow: 0 11px 25px 3px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
+    color: #939393;
 }
 
 .doctor__item > * {

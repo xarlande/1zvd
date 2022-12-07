@@ -32,10 +32,12 @@ containerHeader.addEventListener('click', (event) => {
         menuClose.classList.remove('active')
         burgerClose.classList.remove('active')
     }
-    if (target.closest('.contact')&&target.closest('.contact__container_close')) {
-        let buttonClose = target.closest('.header__container').querySelector('.contact')
-        buttonClose.classList.remove('open')
-        Body.classList.remove('nonScroll')
+    if (target.closest('.contact')) {
+        if (target.closest('.contact__container_close')) {
+            let buttonClose = target.closest('.header__container').querySelector('.contact')
+            buttonClose.classList.remove('open')
+            Body.classList.remove('nonScroll')
+        }
     }
     if (target.closest('.contact__opacity')){
         let buttonClose = target.closest('.header__container').querySelector('.contact')
