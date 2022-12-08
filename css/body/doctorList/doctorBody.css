@@ -2,9 +2,11 @@
     background-color: #46B3B2;
     height: 80px;
 }
-.header__containerTwo_item{
+
+.header__containerTwo_item {
     height: 100%;
 }
+
 .nav__page {
     padding-top: 30px;
     display: flex;
@@ -22,7 +24,7 @@
     border-bottom: 1px solid #C4C4C4;
 }
 
-.header__containerThree_item > ul > li:nth-child(1){
+.header__containerThree_item > ul > li:nth-child(1) {
     list-style: none;
     margin-left: 0;
 }
@@ -31,7 +33,7 @@
     color: #46b3b2;
 }
 
-.header__containerThree_item > ul{
+.header__containerThree_item > ul {
     height: 100%;
     display: flex;
     align-items: center;
@@ -44,12 +46,59 @@
 }
 
 .content {
+    margin-top: 26px;
     display: flex;
 }
 
-.content__block_one{
-    flex: 1;
+.content__block_one {
+    border-radius: 20px;
+    border: #C4C4C4 solid 1px;
+    height: 825px;
+    flex: 4;
 }
-.content__block_two{
-    flex: 1;
+
+.content__block_two {
+    flex: 9;
+}
+
+.doctor__info {
+}
+
+.doctor__info_one {
+    border-bottom: #C4C4C4 solid 1px;
+}
+
+.doctor__info_one > * {
+    margin: auto;
+    text-align: center;
+}
+
+.doctor__one_img{
+    margin-top: 30px;
+}
+
+.doctor__one_img > img {
+    background-color: #00AB77;
+    border-radius: 20px;
+}
+
+.doctor__one_name {
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+.doctor__one_profesion{
+    color: #46B3B2;
+    margin-bottom: 30px;
+}
+
+.one__rating{
+    margin-top: 15px;
+}
+
+.doctor__one_rating{
+    margin-bottom: 40px;
 }
