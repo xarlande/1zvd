@@ -48,6 +48,7 @@
 .content {
     margin-top: 26px;
     display: flex;
+    gap: 60px;
 }
 .content__block_one{
     flex: 4;
@@ -170,4 +171,29 @@
     position: absolute;
     top: 106px;
     left: 163px;
+}
+
+.doctor__rating_two{
+    color: #939393;
+    background: #F5F5F8;
+    border-radius: 40px;
+    padding: 5px 20px;
+}
+
+.doctor__rating_two:after{
+    content: url(../../../img/doctorItem/icon/star_selected.png);
+}
+
+.doctor__ingo_rating{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.doctor__txt{
+    color: white;
+    background-color: #46B3B2;
+    padding: 5px 20px;
+    border-radius: 40px;
 }
