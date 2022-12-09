@@ -49,12 +49,14 @@
     margin-top: 26px;
     display: flex;
 }
+.content__block_one{
+    flex: 4;
+}
 
-.content__block_one {
+.doctor__info {
     border-radius: 20px;
     border: #C4C4C4 solid 1px;
     height: 825px;
-    flex: 4;
 }
 
 .content__block_two {
@@ -143,4 +145,29 @@
     flex-direction: column;
     gap: 15px;
     align-items: center;
+}
+
+.content__map{
+    margin-top: 60px;
+}
+
+.content__map_txt{
+    display: flex;
+    align-items: center;
+    color: #46b3b2;
+}
+
+.content__map_txt:before{
+    content: url(../../../img/decorationIcon/location__icon.svg);
+}
+
+.content__map_map{
+    margin-top: 10px;
+    position: relative;
+}
+
+.map__pointer {
+    position: absolute;
+    top: 106px;
+    left: 163px;
 }

@@ -231,6 +231,7 @@ input {
     box-shadow: 0 11px 25px 3px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     color: #939393;
+    position: relative;
 }
 
 .doctor__item > * {
@@ -276,8 +277,16 @@ input {
     color: black;
 }
 
-.doctor__name:after {
+.doctor__name>a{
+}
 
+.doctor__name>a:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .doctor__strip {
