@@ -276,6 +276,10 @@ input {
     color: black;
 }
 
+.doctor__name:after {
+
+}
+
 .doctor__strip {
     background-color: #e9eff8;
     width: 100%;
