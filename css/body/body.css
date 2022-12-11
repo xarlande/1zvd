@@ -232,6 +232,7 @@ input {
     border-radius: 8px;
     color: #939393;
     position: relative;
+    z-index: 0;
 }
 
 .doctor__item > * {
